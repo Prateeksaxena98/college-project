@@ -139,14 +139,21 @@ section{
    background-color: var(--white);
    z-index: 1000;
    border-bottom: var(--border);
+   height: 100px;
 }
 
 .header .flex{
-   display: flex;
+   vertical-align: baseline;
    align-items: center;
    justify-content: space-between;
    position: relative;
    padding: 1.5rem 2rem;
+   width: auto;
+}
+.heder.flex.h1{
+   display: flex;
+
+
 }
 
 .header .flex .logo{
@@ -183,6 +190,7 @@ section{
 }
 
 .header .flex .icons div{
+   float: right;
    font-size: 2rem;
    color:var(--black);
    background-color: var(--light-bg);
@@ -191,8 +199,10 @@ section{
    width: 4.5rem;
    line-height: 4.5rem;
    cursor: pointer;
-   text-align: center;
+   text-align:center;
    margin-left: .7rem;
+
+
 }
 
 .header .flex .icons div:hover{
@@ -1374,3 +1384,4 @@ section{
    }
 
 }
+

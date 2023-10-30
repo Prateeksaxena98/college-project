@@ -21,10 +21,20 @@
 
       <a href="home.html" class="logo">Employee ERP.</a>
 
-      <form action="search.html" method="post" class="search-form">
-         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
-         <button type="submit" class="fas fa-search"></button>
-      </form>
+      <h2>Current Time</h2>
+      <p id="current-time"></p>
+      <script>
+
+        function updateCurrentTime() {
+          const currentTime = new Date();
+          const timeElement = document.getElementById("current-time");
+          timeElement.textContent = currentTime.toLocaleString();
+        }
+        // Update the current time every second
+        setInterval(updateCurrentTime, 1000);
+        // Call the function immediately to display the time on page load
+        updateCurrentTime();
+      </script>
 
       <div class="icons">
          <div id="menu-btn" class="fas fa-bars"></div>

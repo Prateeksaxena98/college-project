@@ -18,19 +18,51 @@
 <header class="header">
    
    <section class="flex">
+      <div>
+         <div style="width: 20%;float: left;">
+            <a href="home.html" class="logo">Employee ERP.</a>
+      
+            <h2>Current Time</h2>
+                <p id="current-time"></p>
+                <script>
+        
+                  function updateCurrentTime() {
+                    const currentTime = new Date();
+                    const timeElement = document.getElementById("current-time");
+                    timeElement.textContent = currentTime.toLocaleString();
+                  }
+                  // Update the current time every second
+                  setInterval(updateCurrentTime, 1000);
+                  // Call the function immediately to display the time on page load
+                  updateCurrentTime();
+                </script>
 
-      <a href="home.html" class="logo">Employee ERP.</a>
+            <!-- <form action="search.html" method="post" class="search-form">
+               <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+               <button type="submit" class="fas fa-search"></button>
+            </form> -->
+      </div>
 
-      <form action="search.html" method="post" class="search-form">
-         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
-         <button type="submit" class="fas fa-search"></button>
-      </form>
+      <div>
+      
 
-      <div class="icons">
-         <div id="menu-btn" class="fas fa-bars"></div>
-         <div id="search-btn" class="fas fa-search"></div>
-         <div id="user-btn" class="fas fa-user"></div>
-         <div id="toggle-btn" class="fas fa-sun"></div>
+         <h1>Attendance</h1>
+         <input type="radio" id="html" name="fav_language" value="HTML">
+           <label for="html">Good Morning</label>
+         <input type="radio" id="html" name="fav_language" value="HTML">
+           <label for="html">Good Afternoon</label>
+         <input type="radio" id="html" name="fav_language" value="HTML">
+           <label for="html">Good Bye</label>
+       
+
+      </div>
+            <div class="icons" style="width: 80%;float: left;">
+               <div id="menu-btn" class="fas fa-bars"></div>
+               <div id="search-btn" class="fas fa-search"></div>
+               <div id="user-btn" class="fas fa-user"></div>
+               <div id="toggle-btn" class="fas fa-sun"></div>
+            </div>
+      
       </div>
 
       <div class="profile">
